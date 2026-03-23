@@ -14,8 +14,6 @@
       <Folder Include="Controllers\" />
       <Folder Include="Dtos\" />
       <Folder Include="Mappers\" />
-      <Folder Include="Services\" />
-      <Folder Include="Validation\" />
     </ItemGroup>
 
 </Project>

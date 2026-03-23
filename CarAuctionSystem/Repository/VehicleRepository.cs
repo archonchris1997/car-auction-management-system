@@ -4,7 +4,7 @@ namespace CarAuctionSystem.Repository;
 
 public class VehicleRepository : IVehicleRepository
 {
-    List<Vehicle> _vehicles;
+    private readonly List<Vehicle> _vehicles = new();
     
     public Vehicle? GetById(Guid id)
     {
