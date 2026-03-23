@@ -1,4 +1,5 @@
 using CarAuctionSystem.Factories;
+using CarAuctionSystem.Models;
 using CarAuctionSystem.Repository;
 using CarAuctionSystem.Validation;
 
@@ -18,6 +19,12 @@ public class VehicleService
         _repository = repository;
         _validator = validator;
         _factory = factory;
+    }
+
+    public OperationResult<VehicleDto> Create(Vehicle vehicle)
+    {
+        
+        
     }
     
 }
