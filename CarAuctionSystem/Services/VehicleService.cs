@@ -1,4 +1,5 @@
 using CarAuctionSystem.Repository;
+using CarAuctionSystem.Validation;
 
 namespace CarAuctionSystem.Services;
 
