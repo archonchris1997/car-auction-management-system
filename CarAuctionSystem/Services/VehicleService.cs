@@ -1,6 +1,7 @@
 using CarAuctionSystem.Factories;
 using CarAuctionSystem.Models;
 using CarAuctionSystem.Repository;
+using CarAuctionSystem.Utils;
 using CarAuctionSystem.Validation;
 
 namespace CarAuctionSystem.Services;
