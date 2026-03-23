@@ -1,3 +1,4 @@
+using CarAuctionSystem.Dtos;
 using CarAuctionSystem.Factories;
 using CarAuctionSystem.Models;
 using CarAuctionSystem.Repository;
@@ -22,7 +23,7 @@ public class VehicleService
         _factory = factory;
     }
 
-    public OperationResult<VehicleDto> Create(Vehicle vehicle)
+    public OperationResult<VehicleDto> AddVehicle(Vehicle vehicle)
     {
         
         
