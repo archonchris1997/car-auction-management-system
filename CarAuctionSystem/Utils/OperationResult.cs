@@ -9,3 +9,8 @@ public class OperationResult
     
     public ErrorType ErrorType { get; set; } = ErrorType.None;
 }
+
+public class OperationResult<T> : OperationResult
+{
+    public T? Data { get; set; }  
+}
