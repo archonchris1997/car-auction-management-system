@@ -1,3 +1,4 @@
+using CarAuctionSystem.Factories;
 using CarAuctionSystem.Repository;
 using CarAuctionSystem.Validation;
 
@@ -7,6 +8,7 @@ public class VehicleService
 {
     private readonly IVehicleRepository _repository;
     private readonly ICreateVehicleValidator _validator;
+    private readonly IVehicleFactory _factory;
 
     
 }

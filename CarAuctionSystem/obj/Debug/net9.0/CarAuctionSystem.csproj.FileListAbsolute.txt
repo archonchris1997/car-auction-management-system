@@ -1,0 +1,8 @@
+/Users/cristian/RiderProjects/CarAuctionSystem/CarAuctionSystem/obj/Debug/net9.0/CarAuctionSystem.csproj.AssemblyReference.cache
+/Users/cristian/RiderProjects/CarAuctionSystem/CarAuctionSystem/obj/Debug/net9.0/rpswa.dswa.cache.json
+/Users/cristian/RiderProjects/CarAuctionSystem/CarAuctionSystem/obj/Debug/net9.0/CarAuctionSystem.GeneratedMSBuildEditorConfig.editorconfig
+/Users/cristian/RiderProjects/CarAuctionSystem/CarAuctionSystem/obj/Debug/net9.0/CarAuctionSystem.AssemblyInfoInputs.cache
+/Users/cristian/RiderProjects/CarAuctionSystem/CarAuctionSystem/obj/Debug/net9.0/CarAuctionSystem.AssemblyInfo.cs
+/Users/cristian/RiderProjects/CarAuctionSystem/CarAuctionSystem/obj/Debug/net9.0/CarAuctionSystem.csproj.CoreCompileInputs.cache
+/Users/cristian/RiderProjects/CarAuctionSystem/CarAuctionSystem/obj/Debug/net9.0/CarAuctionSystem.MvcApplicationPartsAssemblyInfo.cs
+/Users/cristian/RiderProjects/CarAuctionSystem/CarAuctionSystem/obj/Debug/net9.0/CarAuctionSystem.MvcApplicationPartsAssemblyInfo.cache
