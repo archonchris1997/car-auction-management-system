@@ -11,31 +11,27 @@ public class VehicleFactory : IVehicleFactory
         return request.Type switch
         {
             VehicleType.Sedan => new Sedan(
-                VehicleType.Sedan,          // adicionar este
                 request.Manufacturer,
                 request.Model,
                 request.Year,
                 request.StartingBid,
                 request.NumberOfDoors!.Value),
-
+ 
             VehicleType.Hatchback => new Hatchback(
-                VehicleType.Hatchback,      // adicionar este
                 request.Manufacturer,
                 request.Model,
                 request.Year,
                 request.StartingBid,
                 request.NumberOfDoors!.Value),
-
+ 
             VehicleType.Suv => new Suv(
-                VehicleType.Suv,            // adicionar este
                 request.Manufacturer,
                 request.Model,
                 request.Year,
                 request.StartingBid,
                 request.NumberOfSeats!.Value),
-
+ 
             VehicleType.Truck => new Truck(
-                VehicleType.Truck,          // adicionar este
                 request.Manufacturer,
                 request.Model,
                 request.Year,

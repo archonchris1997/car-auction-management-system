@@ -4,7 +4,8 @@ namespace CarAuctionSystem.Models;
 
 public class Suv:Vehicle
 {
-   public Suv(VehicleType type, string manufacturer, string model, int year, double startingBid, int numberOfSeats) : base(type, manufacturer, model, year, startingBid)
+   public Suv(string manufacturer, string model, int year, double startingBid, int numberOfSeats)
+      : base(VehicleType.Suv, manufacturer, model, year, startingBid)
    {
       NumberOfSeats = numberOfSeats;
    }

@@ -4,7 +4,8 @@ namespace CarAuctionSystem.Models;
 
 public class Hatchback : Vehicle
 {
-    public Hatchback(VehicleType type, string manufacturer, string model, int year, double startingBid, int numberOfDoors) : base(type, manufacturer, model, year, startingBid)
+    public Hatchback(string manufacturer, string model, int year, double startingBid, int numberOfDoors)
+        : base(VehicleType.Hatchback, manufacturer, model, year, startingBid)
     {
         NumberOfDoors = numberOfDoors;
     }
