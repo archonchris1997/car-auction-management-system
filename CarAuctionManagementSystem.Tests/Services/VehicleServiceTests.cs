@@ -12,7 +12,7 @@ using Xunit;
 
 public class VehicleServiceTests
 {
-    private VehicleService vehicleService;
+  
     
     private readonly Mock<IVehicleRepository> _mockRepo;
     private readonly Mock<ICreateVehicleValidator> _mockValidator;
@@ -120,7 +120,7 @@ public class VehicleServiceTests
  
         Assert.True(result.Success);
         Assert.Equal("Ok", result.Message);
-        Assert.Equal(2, result.Data.Count);
+        Assert.Equal(2, result?.Data?.Count);
  
         _mockRepo.Verify(r => r.GetByModel(model), Times.Once);
     }
@@ -162,7 +162,7 @@ public class VehicleServiceTests
  
         Assert.True(result.Success);
         Assert.Equal("Ok", result.Message);
-        Assert.Equal(2, result.Data.Count);
+        Assert.Equal(2, result?.Data?.Count);
  
         _mockRepo.Verify(r => r.GetByManufacturer(manufacturer), Times.Once);
     }
