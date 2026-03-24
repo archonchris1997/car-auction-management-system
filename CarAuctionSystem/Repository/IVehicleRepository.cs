@@ -6,6 +6,8 @@ public interface IVehicleRepository
 {
     Vehicle? GetById(Guid id);
     List<Vehicle> GetByModel(string model);
+    
+    List<Vehicle> GetByYear(int year);
     List<Vehicle> GetByManufacturer(string manufacturer);
     void Insert(Vehicle vehicle);
 }

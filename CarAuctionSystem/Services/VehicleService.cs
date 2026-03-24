@@ -1,5 +1,6 @@
 using CarAuctionSystem.Dtos;
 using CarAuctionSystem.Factories;
+using CarAuctionSystem.Mappers;
 using CarAuctionSystem.Models;
 using CarAuctionSystem.Repository;
 using CarAuctionSystem.Utils;
@@ -63,23 +64,96 @@ public class VehicleService:IVehicleService
         };
     }
 
-    public OperationResult<List<VehicleDto>> GetAll()
-    {
-        throw new NotImplementedException();
-    }
+    
 
     public OperationResult<List<VehicleDto>> GetByManufacturer(string manufacturer)
     {
-        throw new NotImplementedException();
+        var vehicles = _repository.GetByManufacturer(manufacturer);
+ 
+        if (!vehicles.Any())
+            return new OperationResult<List<VehicleDto>>
+            {
+                Success = false,
+                Message = "No vehicles found",
+                ErrorType = ErrorType.NotFound,
+                Data = null
+            };
+ 
+        var dtos = new List<VehicleDto>();
+        foreach (var vehicle in vehicles)
+        {
+            var dto = VehicleMapper.ConvertToDto(vehicle);
+            dtos.Add(dto);
+        }
+ 
+        return new OperationResult<List<VehicleDto>>
+        {
+            Success = true,
+            Message = "Ok",
+            Data = dtos
+        };
     }
+    
 
     public OperationResult<List<VehicleDto>> GetByModel(string model)
     {
-        throw new NotImplementedException();
+        var vehicles = _repository.GetByModel(model);
+ 
+        if (!vehicles.Any())
+            return new OperationResult<List<VehicleDto>>
+            {
+                Success = false,
+                Message = "No vehicles found",
+                ErrorType = ErrorType.NotFound,
+                Data = null
+            };
+ 
+        var dtos = new List<VehicleDto>();
+        foreach (var vehicle in vehicles)
+        {
+            var dto = VehicleMapper.ConvertToDto(vehicle);
+            dtos.Add(dto);
+        }
+ 
+        return new OperationResult<List<VehicleDto>>
+        {
+            Success = true,
+            Message = "Ok",
+            Data = dtos
+        };
     }
 
     public OperationResult<List<VehicleDto>> GetByYear(int year)
     {
-        throw new NotImplementedException();
+        var vehicles = _repository.GetByYear(year);
+
+        if (!vehicles.Any())
+        {
+            return new OperationResult<List<VehicleDto>>
+            {
+                    Success = false,
+                    Message = "No vehicles found",
+                    ErrorType = ErrorType.NotFound,
+                    Data = null
+            };
+            
+        }
+
+        var dtos = new List<VehicleDto>();
+        
+        foreach (var vehicle in vehicles)
+        {
+            var dto = VehicleMapper.ConvertToDto(vehicle);
+            dtos.Add(dto);
+        }
+ 
+        return new OperationResult<List<VehicleDto>>
+        {
+            Success = true,
+            Message = "Ok",
+            Data = dtos
+        };
+
+
     }
 }

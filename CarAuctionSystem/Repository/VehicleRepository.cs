@@ -15,7 +15,12 @@ public class VehicleRepository : IVehicleRepository
     {
         return _vehicles.Where(x => x.Model == model).ToList();
     }
-
+    
+    public List<Vehicle> GetByYear(int year)
+    {
+        return _vehicles.Where(x => x.Year == year).ToList();
+    }
+    
     public List<Vehicle> GetByManufacturer(string manufacturer)
     {
         return _vehicles.Where(x => x.Manufacturer == manufacturer).ToList();
