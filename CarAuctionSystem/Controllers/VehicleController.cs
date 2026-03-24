@@ -22,6 +22,20 @@ public class VehicleController:ControllerBase
 
     }
 
+    [HttpGet("byManufacturer/{manufacturer}")]
+    public IActionResult GetByManufacturer(string manufacturer)
+    {
+        var result = _vehicleService.GetByManufacturer(manufacturer);
+        return ToHttp(result);
+    }
+ 
+    [HttpGet("byModel/{model}")]
+    public IActionResult GetByModel(string model)
+    {
+        var result = _vehicleService.GetByModel(model);
+        return ToHttp(result);
+    }
+    
     private IActionResult ToHttp<T>(OperationResult<T> result)
     {
         if (result.Success)
