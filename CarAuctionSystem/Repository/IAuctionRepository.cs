@@ -1,6 +1,6 @@
 using CarAuctionSystem.Models;
 
-namespace CarAuctionSystem.Controllers;
+namespace CarAuctionSystem.Repository;
 
 public interface IAuctionRepository
 {
