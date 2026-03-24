@@ -1,3 +1,4 @@
+using CarAuctionSystem.Dtos;
 using CarAuctionSystem.Utils;
 
 namespace CarAuctionSystem.Services;
