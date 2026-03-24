@@ -5,7 +5,6 @@ namespace CarAuctionSystem.Repository;
 public class AuctionRepository:IAuctionRepository
 {
     
-    
     private readonly List<Auction> _auctions = new();
  
     public Auction? GetByVehicleId(Guid vehicleId)
