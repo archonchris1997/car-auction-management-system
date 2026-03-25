@@ -8,37 +8,42 @@ public class VehicleFactory : IVehicleFactory
 {
     public Vehicle Create(CreateVehicleRequest request)
     {
-        return request.Type switch
+        switch (request.Type)
         {
-            VehicleType.Sedan => new Sedan(
-                request.Manufacturer,
-                request.Model,
-                request.Year,
-                request.StartingBid,
-                request.NumberOfDoors!.Value),
+            case VehicleType.Sedan:
+                return new Sedan(
+                    request.Manufacturer,
+                    request.Model,
+                    request.Year,
+                    request.StartingBid,
+                    request.NumberOfDoors);
  
-            VehicleType.Hatchback => new Hatchback(
-                request.Manufacturer,
-                request.Model,
-                request.Year,
-                request.StartingBid,
-                request.NumberOfDoors!.Value),
+            case VehicleType.Hatchback:
+                return new Hatchback(
+                    request.Manufacturer,
+                    request.Model,
+                    request.Year,
+                    request.StartingBid,
+                    request.NumberOfDoors);
  
-            VehicleType.Suv => new Suv(
-                request.Manufacturer,
-                request.Model,
-                request.Year,
-                request.StartingBid,
-                request.NumberOfSeats!.Value),
+            case VehicleType.Suv:
+                return new Suv(
+                    request.Manufacturer,
+                    request.Model,
+                    request.Year,
+                    request.StartingBid,
+                    request.NumberOfSeats);
  
-            VehicleType.Truck => new Truck(
-                request.Manufacturer,
-                request.Model,
-                request.Year,
-                request.StartingBid,
-                request.LoadCapacity!.Value),
+            case VehicleType.Truck:
+                return new Truck(
+                    request.Manufacturer,
+                    request.Model,
+                    request.Year,
+                    request.StartingBid,
+                    request.LoadCapacity);
  
-            _ => throw new InvalidOperationException($"Unsupported vehicle type: {request.Type}")
-        };
+            default:
+                throw new InvalidOperationException($"Unsupported vehicle type: {request.Type}");
+        }
     }
 }
