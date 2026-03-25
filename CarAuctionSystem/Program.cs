@@ -6,10 +6,9 @@ using CarAuctionSystem.Validation;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllers();
-
 // Repository
 builder.Services.AddSingleton<IVehicleRepository, VehicleRepository>();
+builder.Services.AddSingleton<IAuctionRepository, AuctionRepository>();
 
 // Factory
 builder.Services.AddScoped<IVehicleFactory, VehicleFactory>();
@@ -18,7 +17,8 @@ builder.Services.AddScoped<IVehicleFactory, VehicleFactory>();
 builder.Services.AddScoped<ICreateVehicleValidator, CreateVehicleValidator>();
 
 // Services
-builder.Services.AddScoped<VehicleService>();
+builder.Services.AddScoped<IVehicleService, VehicleService>();
+builder.Services.AddScoped<IAuctionService, AuctionService>();
 
 var app = builder.Build();
 
