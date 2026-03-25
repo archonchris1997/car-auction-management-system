@@ -5,5 +5,6 @@
     &lt;TestId&gt;xUnit::840ABC9A-993E-4F47-9DB8-C9A2F90BBF65::net9.0::CarAuctionManagementSystem.Tests.Services.AuctionServiceTest.StartAuction_WhenVehicleDoesNotExist_ReturnsFailure&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::840ABC9A-993E-4F47-9DB8-C9A2F90BBF65::net9.0::CarAuctionManagementSystem.Tests.Services.AuctionServiceTest.StartAuction_WhenVehicleExistsAndNoAuction_ReturnsSuccess&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::840ABC9A-993E-4F47-9DB8-C9A2F90BBF65::net9.0::CarAuctionManagementSystem.Tests.Services.AuctionServiceTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::840ABC9A-993E-4F47-9DB8-C9A2F90BBF65::net9.0::CarAuctionManagementSystem.Tests.Validation.CreateVehicleValidatorTests&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
