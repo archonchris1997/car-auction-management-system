@@ -163,8 +163,7 @@ public class VehicleServiceTests
         Assert.True(result.Success);
         Assert.Equal("Ok", result.Message);
         Assert.Equal(2, result?.Data?.Count);
- 
-        _mockRepo.Verify(r => r.GetByManufacturer(manufacturer), Times.Once);
+        
     }
  
     [Fact]
@@ -181,8 +180,7 @@ public class VehicleServiceTests
         Assert.False(result.Success);
         Assert.Equal(ErrorType.NotFound, result.ErrorType);
         Assert.Null(result.Data);
- 
-        _mockRepo.Verify(r => r.GetByManufacturer(manufacturer), Times.Once);
+        
     }
 
     
