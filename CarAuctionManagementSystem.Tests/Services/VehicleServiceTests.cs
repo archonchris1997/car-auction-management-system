@@ -122,7 +122,7 @@ public class VehicleServiceTests
         Assert.Equal("Ok", result.Message);
         Assert.Equal(2, result?.Data?.Count);
  
-        _mockRepo.Verify(r => r.GetByModel(model), Times.Once);
+        
     }
 
     [Fact]

@@ -11,7 +11,7 @@ public abstract class Vehicle
     public int Year { get; }
     public double StartingBid { get; }
  
-    protected Vehicle(VehicleType type, string manufacturer, string model, int year, double startingBid)
+    public Vehicle(VehicleType type, string manufacturer, string model, int year, double startingBid)
     {
         Id = Guid.NewGuid();
         Type = type;

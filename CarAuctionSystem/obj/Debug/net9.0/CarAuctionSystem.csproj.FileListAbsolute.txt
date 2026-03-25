@@ -30,3 +30,4 @@
 /Users/cristian/RiderProjects/CarAuctionSystem/CarAuctionSystem/obj/Debug/net9.0/CarAuctionSystem.pdb
 /Users/cristian/RiderProjects/CarAuctionSystem/CarAuctionSystem/obj/Debug/net9.0/CarAuctionSystem.genruntimeconfig.cache
 /Users/cristian/RiderProjects/CarAuctionSystem/CarAuctionSystem/obj/Debug/net9.0/ref/CarAuctionSystem.dll
+/Users/cristian/RiderProjects/CarAuctionSystem/CarAuctionSystem/obj/Debug/net9.0/CarAuctionSystem.sourcelink.json

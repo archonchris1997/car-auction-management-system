@@ -3,7 +3,7 @@ using CarAuctionSystem.Models;
 
 namespace CarAuctionSystem.Mappers;
 
-public class AuctionMapper
+public static class AuctionMapper
 {
     public static AuctionDto ConvertToDto(Auction auction)
     {

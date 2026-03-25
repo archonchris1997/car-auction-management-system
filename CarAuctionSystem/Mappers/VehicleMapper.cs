@@ -3,7 +3,7 @@ using CarAuctionSystem.Models;
 
 namespace CarAuctionSystem.Mappers;
 
-public class VehicleMapper
+public static class VehicleMapper
 {
     public static VehicleDto ConvertToDto(Vehicle vehicle)
     {

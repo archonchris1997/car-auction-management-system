@@ -109,3 +109,4 @@
 /Users/cristian/RiderProjects/CarAuctionSystem/CarAuctionManagementSystem.Tests/obj/Debug/net9.0/CarAuctionManagementSystem.Tests.pdb
 /Users/cristian/RiderProjects/CarAuctionSystem/CarAuctionManagementSystem.Tests/obj/Debug/net9.0/CarAuctionManagementSystem.Tests.genruntimeconfig.cache
 /Users/cristian/RiderProjects/CarAuctionSystem/CarAuctionManagementSystem.Tests/obj/Debug/net9.0/ref/CarAuctionManagementSystem.Tests.dll
+/Users/cristian/RiderProjects/CarAuctionSystem/CarAuctionManagementSystem.Tests/obj/Debug/net9.0/CarAuctionManagementSystem.Tests.sourcelink.json
