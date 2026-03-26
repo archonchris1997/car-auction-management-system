@@ -12,7 +12,6 @@ using Xunit;
 
 public class VehicleServiceTests
 {
-  
     
     private readonly Mock<IVehicleRepository> _mockRepo;
     private readonly Mock<ICreateVehicleValidator> _mockValidator;

@@ -31,3 +31,6 @@
 /Users/cristian/RiderProjects/CarAuctionSystem/CarAuctionSystem/obj/Debug/net9.0/CarAuctionSystem.genruntimeconfig.cache
 /Users/cristian/RiderProjects/CarAuctionSystem/CarAuctionSystem/obj/Debug/net9.0/ref/CarAuctionSystem.dll
 /Users/cristian/RiderProjects/CarAuctionSystem/CarAuctionSystem/obj/Debug/net9.0/CarAuctionSystem.sourcelink.json
+/Users/cristian/RiderProjects/CarAuctionSystem/CarAuctionSystem/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/cristian/RiderProjects/CarAuctionSystem/CarAuctionSystem/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/cristian/RiderProjects/CarAuctionSystem/CarAuctionSystem/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll

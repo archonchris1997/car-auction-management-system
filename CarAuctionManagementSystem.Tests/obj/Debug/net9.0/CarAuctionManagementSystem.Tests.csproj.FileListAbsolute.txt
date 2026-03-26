@@ -110,3 +110,6 @@
 /Users/cristian/RiderProjects/CarAuctionSystem/CarAuctionManagementSystem.Tests/obj/Debug/net9.0/CarAuctionManagementSystem.Tests.genruntimeconfig.cache
 /Users/cristian/RiderProjects/CarAuctionSystem/CarAuctionManagementSystem.Tests/obj/Debug/net9.0/ref/CarAuctionManagementSystem.Tests.dll
 /Users/cristian/RiderProjects/CarAuctionSystem/CarAuctionManagementSystem.Tests/obj/Debug/net9.0/CarAuctionManagementSystem.Tests.sourcelink.json
+/Users/cristian/RiderProjects/CarAuctionSystem/CarAuctionManagementSystem.Tests/bin/Debug/net9.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/cristian/RiderProjects/CarAuctionSystem/CarAuctionManagementSystem.Tests/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/cristian/RiderProjects/CarAuctionSystem/CarAuctionManagementSystem.Tests/bin/Debug/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll
